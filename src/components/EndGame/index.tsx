@@ -20,13 +20,16 @@ export const EndGame = () => {
         Você acertou <span>{quizState.score}</span> de{" "}
         {quizState.questions.length} perguntas.
       </p>
-      {quizState.score <= 2 && (
+      {quizState.score <= 3 && (
         <p>Parece que foi difícil, melhor sorte da próxima vez.</p>
       )}
-      {quizState.score > 2 && quizState.score < 5 ?
+      {quizState.score > 3 && quizState.score < 6 ?
+        <p>Continue tentando!</p> : ''
+      }
+      {quizState.score >= 6 && quizState.score < 10 ?
         <p>Muito bom!</p> : ''
       }
-      {quizState.score === 5 ?
+      {quizState.score === 10 ?
         <p>Você obteve uma pontuação perfeita, parabéns!!</p> : ''
       }
       <img src={congrats} alt="" />
