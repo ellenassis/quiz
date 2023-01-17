@@ -9,6 +9,7 @@ export const Container = styled.div`
 	}
 
 	.msg {
+		margin-top: 3rem;
 		color: var(--secondary);
 	}
 
