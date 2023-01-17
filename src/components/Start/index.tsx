@@ -13,7 +13,7 @@ export const Start = () => {
 	return (
 		<div>
 			<Container>
-				<h2>Seja bem-vindo</h2>
+				<h2>Seja bem-vindo(a)</h2>
 				<p>Teste seus conhecimentos de JavaScript.</p>
 				<p className='msg'>Clique no botão abaixo para começar</p>
 				<Button onClick={() => dispatch({type: 'CHANGE_STATE'})} name='Iniciar' />
