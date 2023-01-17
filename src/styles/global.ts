@@ -3,9 +3,12 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 	:root {
 		--white: #fff;
+		--black: #000;
 		--background: #1c1c1c;
-		--primary: rgba(132, 53 , 222, 1);
-		--secondary: rgba(184, 84 , 232, 1);
+		--primary: #255C99;
+		--secondary: #6369D1;
+		--green: #0bfc03;
+		--red: #FF0000;
 	}
 
 	* {
@@ -38,5 +41,9 @@ export const GlobalStyle = createGlobalStyle`
 
 	.app h1 {
 		margin-bottom: 2rem;
+	}
+
+	button {
+		cursor: pointer;
 	}
 `;

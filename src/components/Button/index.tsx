@@ -2,12 +2,13 @@ import { Btn } from "./styles";
 
 interface ButtonProps {
   name: String;
+  onClick?: () => void 
 }
 
 export const Button = (props: ButtonProps) => {
   return (
     <div>
-      <Btn>{props.name}</Btn>
+      <Btn onClick={props.onClick}>{props.name}</Btn>
     </div>
   );
 };

@@ -4,7 +4,7 @@ export const Btn = styled.button`
   font-weight: bold;
   font-size: 1.2rem;
   cursor: pointer;
-  padding: 0.8rem;
+  padding: 0.8rem 1.5rem;
   background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
   border-radius: 3rem;
   border: none;
